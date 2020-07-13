@@ -1,6 +1,6 @@
 command:
   /home/ubuntu/gem5/build/ALPHA/gem5.opt: True
-  --outdir: ./
+  --outdir: ${outdir}
   /home/ubuntu/gem5/configs/example/se.py: True
   --num-cpus: ${core}
   --cpu-type: detailed
@@ -17,6 +17,8 @@ command:
   --cmd: /home/ubuntu/gem5/splash2/fft/FFT
   --options: "-p2"
 
+outdir: ./
+
 core: 16
 l1size: 4kB
 l1assoc: 2
@@ -26,3 +28,9 @@ latency: 2
 
 access_time:
   csv_path: ./access_time.csv
+
+result:
+  save_params:
+    - sim_seconds
+    - sim_ticks
+  csv_path: .result.csv

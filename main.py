@@ -14,6 +14,18 @@ def get_clock(csv_path, l1size, l1assoc):
     return clock
 
 
+def get_from_stats(text_dir, param):
+    with open(f"{text_dir}stats.txt") as f:
+        for s_line in f:
+            if param in s_line[:len(param)]:
+                break
+        else:
+            return
+    s_line = s_line[len(param):s_line.find('#')]
+    s_list = [i for i in s_line.split(' ') if i]
+    return s_list
+
+
 @hydra.main(config_path='config.yaml')
 def main(config):
     clock = get_clock(hydra.utils.to_absolute_path(config.access_time.csv_path), config.l1size, config.l1assoc)
@@ -32,6 +44,16 @@ def main(config):
     logger.info(command)
     result = subprocess.run(command)
     logger.info(result)
+
+    save_params = dict()
+    for param_name in config.result.save_params:
+        param = get_from_stats(f"{config.outdir}", param_name)
+        if len(param) > 1:
+            for i, p in enumerate(param):
+                save_params[f"{param_name}[{i}]"] = p
+        else:
+            save_params[param_name] = param[0]
+    logger.info(save_params)
 
 
 if __name__ == "__main__":
