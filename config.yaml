@@ -4,7 +4,8 @@ command:
   /home/ubuntu/gem5/configs/example/se.py: True
   --num-cpus: ${core}
   --cpu-type: detailed
-  --cpu-clock: 1GHz
+  # --cpu-clock: 1GHz
+  --cpu-clock: ~
   --mem-type: SimpleMemory
   --caches: True
   --l2cache: True
@@ -22,3 +23,6 @@ l1assoc: 2
 l2size: 512kB
 l2assoc: 8
 latency: 2
+
+access_time:
+  csv_path: ./access_time.csv
