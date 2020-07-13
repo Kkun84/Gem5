@@ -26,6 +26,12 @@ def get_from_stats(text_dir, param):
     return s_list
 
 
+def write_sim_ticks(csv_path, core, l1size, l1assoc, l2size, l2assoc, latency):
+    df = pandas.csv_path
+    df.to_csv(csv_path, mode='a', header=None)
+    return
+
+
 @hydra.main(config_path='config.yaml')
 def main(config):
     clock = get_clock(hydra.utils.to_absolute_path(config.access_time.csv_path), config.l1size, config.l1assoc)
