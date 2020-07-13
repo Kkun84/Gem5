@@ -10,14 +10,14 @@ command:
   --l2cache: True
   --l1d_size: ${l1size}
   --l1d_assoc: ${l1assoc}
-  --l2_size: ${512kB}
+  --l2_size: ${l2size}
   --l2_assoc: ${l2assoc}
   --l2_latency: ${latency}
   --cmd: /home/ubuntu/gem5/splash2/fft/FFT
   --options: "-p2"
 
-core: 16kB
-l1size: 4
+core: 16
+l1size: 4kB
 l1assoc: 2
 l2size: 512kB
 l2assoc: 8
