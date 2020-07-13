@@ -26,8 +26,16 @@ def get_from_stats(text_dir, param):
     return s_list
 
 
-def write_sim_ticks(csv_path, core, l1size, l1assoc, l2size, l2assoc, latency):
-    df = pandas.csv_path
+def write_sim_ticks(csv_path, core, l1size, l1assoc, l2size, l2assoc, latency, save_params):
+    df = pandas.DataFrame(dict(
+        core=[core],
+        l1size=[l1size],
+        l1assoc=[l1assoc],
+        l2size=[l2size],
+        l2assoc=[l2assoc],
+        latency=[latency],
+        **save_params
+    ))
     df.to_csv(csv_path, mode='a', header=None)
     return
 
