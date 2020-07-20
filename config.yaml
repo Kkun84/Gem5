@@ -15,7 +15,7 @@ command:
   --l2_assoc: ${l2assoc}
   --l2_latency: ${latency}
   --cmd: /home/ubuntu/gem5/splash2/fft/FFT
-  --options: "-p2"
+  --options: "-p${core}"
 
 outdir: ./
 
@@ -33,4 +33,4 @@ result:
   save_params:
     - sim_seconds
     - sim_ticks
-  csv_path: .result.csv
+  csv_path: ./result.csv
