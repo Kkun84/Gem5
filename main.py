@@ -28,8 +28,9 @@ def get_from_stats(text_dir, param):
     return s_list
 
 
-def write_sim_ticks(csv_path, core, clock, l1size, l1assoc, l2size, l2assoc, latency, save_params):
+def write_sim_ticks(csv_path, command, core, clock, l1size, l1assoc, l2size, l2assoc, latency, save_params):
     df = pandas.DataFrame(dict(
+        command=[command],
         core=[core],
         clock=[clock],
         l1size=[l1size],
@@ -39,7 +40,7 @@ def write_sim_ticks(csv_path, core, clock, l1size, l1assoc, l2size, l2assoc, lat
         latency=[latency],
         **save_params
     ))
-    df.to_csv(csv_path, mode='a', header=False)
+    df.to_csv(csv_path, mode='a', header=False, index=False)
     return
 
 
@@ -79,7 +80,7 @@ def main(config):
     logger.info(save_params)
 
     logger.info('Save CSV.')
-    write_sim_ticks(to_absolute_path(config.result.csv_path), config.core, clock, config.l1size, config.l1assoc, config.l2size, config.l2assoc, config.latency, save_params)
+    write_sim_ticks(to_absolute_path(config.result.csv_path), config.command['--cmd'], config.core, clock, config.l1size, config.l1assoc, config.l2size, config.l2assoc, config.latency, save_params)
 
     logger.info('Done all.')
 
