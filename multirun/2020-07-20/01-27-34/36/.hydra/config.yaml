@@ -1,0 +1,31 @@
+access_time:
+  csv_path: ./access_time.csv
+command:
+  --caches: true
+  --cmd: /home/ubuntu/gem5/splash2/fft/FFT
+  --cpu-clock: null
+  --cpu-type: detailed
+  --l1d_assoc: ${l1assoc}
+  --l1d_size: ${l1size}
+  --l2_assoc: ${l2assoc}
+  --l2_latency: ${latency}
+  --l2_size: ${l2size}
+  --l2cache: true
+  --mem-type: SimpleMemory
+  --num-cpus: ${core}
+  --options: -p${core}
+  --outdir: ${outdir}
+  /home/ubuntu/gem5/build/ALPHA/gem5.opt: true
+  /home/ubuntu/gem5/configs/example/se.py: true
+core: 16
+l1assoc: 2
+l1size: 8kB
+l2assoc: 8
+l2size: 1024kB
+latency: 2
+outdir: ./
+result:
+  csv_path: ./result.csv
+  save_params:
+  - sim_seconds
+  - sim_ticks

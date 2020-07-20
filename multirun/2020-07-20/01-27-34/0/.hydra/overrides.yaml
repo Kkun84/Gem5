@@ -1,0 +1,6 @@
+- core=16
+- l1size=4kB
+- l1assoc=2
+- l2size=1024kB
+- l2assoc=8
+- latency=2

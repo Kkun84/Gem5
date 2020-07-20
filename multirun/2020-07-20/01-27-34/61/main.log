@@ -1,0 +1,53 @@
+[2020-07-20 01:38:40,837][__main__][INFO] - /home/ubuntu/gem5/build/ALPHA/gem5.opt
+[2020-07-20 01:38:40,837][__main__][INFO] - True
+[2020-07-20 01:38:40,838][__main__][INFO] - /home/ubuntu/gem5/build/ALPHA/gem5.opt
+[2020-07-20 01:38:40,838][__main__][INFO] - --outdir
+[2020-07-20 01:38:40,838][__main__][INFO] - ./
+[2020-07-20 01:38:40,838][__main__][INFO] - --outdir=./
+[2020-07-20 01:38:40,838][__main__][INFO] - /home/ubuntu/gem5/configs/example/se.py
+[2020-07-20 01:38:40,838][__main__][INFO] - True
+[2020-07-20 01:38:40,838][__main__][INFO] - /home/ubuntu/gem5/configs/example/se.py
+[2020-07-20 01:38:40,838][__main__][INFO] - --num-cpus
+[2020-07-20 01:38:40,838][__main__][INFO] - 16
+[2020-07-20 01:38:40,839][__main__][INFO] - --num-cpus=16
+[2020-07-20 01:38:40,839][__main__][INFO] - --cpu-type
+[2020-07-20 01:38:40,839][__main__][INFO] - detailed
+[2020-07-20 01:38:40,839][__main__][INFO] - --cpu-type=detailed
+[2020-07-20 01:38:40,839][__main__][INFO] - --cpu-clock
+[2020-07-20 01:38:40,839][__main__][INFO] - None
+[2020-07-20 01:38:40,839][__main__][INFO] - --cpu-clock=804906711.3121591Hz
+[2020-07-20 01:38:40,839][__main__][INFO] - --mem-type
+[2020-07-20 01:38:40,839][__main__][INFO] - SimpleMemory
+[2020-07-20 01:38:40,839][__main__][INFO] - --mem-type=SimpleMemory
+[2020-07-20 01:38:40,839][__main__][INFO] - --caches
+[2020-07-20 01:38:40,840][__main__][INFO] - True
+[2020-07-20 01:38:40,840][__main__][INFO] - --caches
+[2020-07-20 01:38:40,840][__main__][INFO] - --l2cache
+[2020-07-20 01:38:40,840][__main__][INFO] - True
+[2020-07-20 01:38:40,840][__main__][INFO] - --l2cache
+[2020-07-20 01:38:40,840][__main__][INFO] - --l1d_size
+[2020-07-20 01:38:40,840][__main__][INFO] - 8kB
+[2020-07-20 01:38:40,840][__main__][INFO] - --l1d_size=8kB
+[2020-07-20 01:38:40,840][__main__][INFO] - --l1d_assoc
+[2020-07-20 01:38:40,841][__main__][INFO] - 4
+[2020-07-20 01:38:40,841][__main__][INFO] - --l1d_assoc=4
+[2020-07-20 01:38:40,841][__main__][INFO] - --l2_size
+[2020-07-20 01:38:40,841][__main__][INFO] - 1024kB
+[2020-07-20 01:38:40,841][__main__][INFO] - --l2_size=1024kB
+[2020-07-20 01:38:40,841][__main__][INFO] - --l2_assoc
+[2020-07-20 01:38:40,841][__main__][INFO] - 128
+[2020-07-20 01:38:40,841][__main__][INFO] - --l2_assoc=128
+[2020-07-20 01:38:40,841][__main__][INFO] - --l2_latency
+[2020-07-20 01:38:40,842][__main__][INFO] - 3
+[2020-07-20 01:38:40,842][__main__][INFO] - --l2_latency=3
+[2020-07-20 01:38:40,842][__main__][INFO] - --cmd
+[2020-07-20 01:38:40,842][__main__][INFO] - /home/ubuntu/gem5/splash2/fft/FFT
+[2020-07-20 01:38:40,842][__main__][INFO] - --cmd=/home/ubuntu/gem5/splash2/fft/FFT
+[2020-07-20 01:38:40,842][__main__][INFO] - --options
+[2020-07-20 01:38:40,842][__main__][INFO] - -p16
+[2020-07-20 01:38:40,842][__main__][INFO] - --options=-p16
+[2020-07-20 01:38:40,842][__main__][INFO] - ['/home/ubuntu/gem5/build/ALPHA/gem5.opt', '--outdir=./', '/home/ubuntu/gem5/configs/example/se.py', '--num-cpus=16', '--cpu-type=detailed', '--cpu-clock=804906711.3121591Hz', '--mem-type=SimpleMemory', '--caches', '--l2cache', '--l1d_size=8kB', '--l1d_assoc=4', '--l2_size=1024kB', '--l2_assoc=128', '--l2_latency=3', '--cmd=/home/ubuntu/gem5/splash2/fft/FFT', '--options=-p16']
+[2020-07-20 01:38:54,413][__main__][INFO] - CompletedProcess(args=['/home/ubuntu/gem5/build/ALPHA/gem5.opt', '--outdir=./', '/home/ubuntu/gem5/configs/example/se.py', '--num-cpus=16', '--cpu-type=detailed', '--cpu-clock=804906711.3121591Hz', '--mem-type=SimpleMemory', '--caches', '--l2cache', '--l1d_size=8kB', '--l1d_assoc=4', '--l2_size=1024kB', '--l2_assoc=128', '--l2_latency=3', '--cmd=/home/ubuntu/gem5/splash2/fft/FFT', '--options=-p16'], returncode=0)
+[2020-07-20 01:38:54,415][__main__][INFO] - {'sim_seconds': '0.001333', 'sim_ticks': '1332803862'}
+[2020-07-20 01:38:54,415][__main__][INFO] - Save CSV.
+[2020-07-20 01:38:54,418][__main__][INFO] - Done all.
