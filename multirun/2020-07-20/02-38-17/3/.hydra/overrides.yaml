@@ -1,0 +1,7 @@
+- core=16
+- l1size=4kB
+- l1assoc=2
+- l2size=1024kB
+- l2assoc=32
+- latency=2
+- command.--cmd=/home/ubuntu/gem5/splash2/lu/contiguous_blocks/LU
